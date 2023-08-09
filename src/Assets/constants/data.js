@@ -1,8 +1,8 @@
 export const PORT = 5000;
 export const URL_LOCAL = `http://localhost:${PORT}`;
 export const URL_LOCAL_AUTH = `http://localhost:${PORT}/auth`;
-export const URL_PRO = 'https://stego-api-onrender.com';
-export const URL_PRO_AUTH = 'https://stego-api-onrender.com/auth';
+export const URL_PRO = 'https://stego-api.onrender.com';
+export const URL_PRO_AUTH = 'https://stego-api.onrender.com/auth';
 
 export const images = {
     crypto: require('../images/crypto/crypto.jfif'),
