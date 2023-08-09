@@ -1,0 +1,82 @@
+@import url('../../../App.css');
+
+.Landing{
+    width: 100%;
+    height: 100%;
+    color: #212121;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.Aside{
+    width: 100%;
+    min-width: 200px;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-dark);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    margin-bottom: 10px;
+}
+.Aside h2{
+    padding: 10px 0;
+    margin: 0;
+    font-size: small;
+    text-align: center;
+    color: var(--bs-salmon);
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.Aside div{
+    font-size: medium;
+    text-align: justify;
+    padding: 5px 10px;
+    line-height: 1.5;
+}
+.Aside div img{
+    width: 100%;
+    float: left; 
+    margin: 0 10px 10px 0;
+}
+.Aside div p {
+    clear: both;
+    text-align: justify; /* Justify the text for a cleaner look */
+}
+.Aside div span{
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.Content{
+    width: 100%;
+    background-color: inherit;
+    line-height: 1.5rem;
+    color: var(--bs-dark);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media(min-width:450px){
+    .Landing{
+        flex-direction: row;
+    }
+    .Aside{
+        width: 30%;
+        min-height: 500px;
+        margin-bottom: 0;
+    }
+    .Aside h2{
+        font-size: large;
+    }
+    .Content{
+        width: 68.5%;
+        min-height: 500px;
+    }
+}

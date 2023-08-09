@@ -1,0 +1,48 @@
+.Sidedraw{
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    background-color: #eee;
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 110;
+    transition: transform 0.5s ease-out;
+}
+.Sidedraw section{
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Sidedraw section h3{
+    border-bottom: dotted 2px #212529;
+}
+.Sidedraw nav{
+    height: auto;
+    min-height: 400px;
+    margin-top: 16px;
+    padding: 0 10px;
+}
+.Sidedraw footer{
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+}
+.Open{
+    transform: translateY(0);
+}
+.Close{
+    transform: translateX(-100%);
+}
+
+@media(min-width:450px){
+    .Sidedraw{
+        display: none;
+    }
+}

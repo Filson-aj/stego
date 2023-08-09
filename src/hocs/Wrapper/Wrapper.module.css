@@ -1,0 +1,31 @@
+@import url('../../App.css');
+
+.Wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.Content{
+    width: 100%;
+    height: auto;
+    min-height: var(--wrapper-height);
+    margin-top: calc(var(--header-height) - 8px);
+    padding: 0;
+    background: linear-gradient(35deg, var(--bs-orange) 10%, var(--bs-salmon) 90%);
+    color: var(--bs-salmon);
+    box-sizing: border-box;
+}
+.Footer{
+    display: none;
+}
+
+@media(min-width:450px){
+    .Content{
+        min-height: var(--wrapper-md-height);
+        margin-top: calc(var(--header-md-height) - 20px);
+    }
+    .Footer{
+        display: block;
+    }
+}

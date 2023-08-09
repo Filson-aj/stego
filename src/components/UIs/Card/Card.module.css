@@ -1,0 +1,57 @@
+@import url('../../../App.css');
+
+.Card{
+    width: auto;
+    min-width: 200px;
+    margin-bottom: 8px;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-dark);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+.Card:last-child{
+    margin-bottom: 0;
+}
+.Card section{
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align: justify;
+}
+.Card header h4 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: large;
+    color: var(--bs-salmon);
+}
+.Card header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+.Card header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  }
+.Card footer {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+.Card footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  }
+
+@media(min-width:450px){
+    .Card{
+        width: 100%;
+    }
+    .Card header h4 {
+        font-size: x-large;
+    }
+}
